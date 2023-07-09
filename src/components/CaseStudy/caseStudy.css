@@ -1,0 +1,150 @@
+.case-study{
+    position: relative;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--color-lightgray);
+    border-radius: 20px;
+    gap: 1rem;
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+
+.animated{
+    opacity: 1;
+    -webkit-animation: slide-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+.case-study-img{
+    max-width: 500px;
+    width: 40%;
+}
+
+
+
+.case-study-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+
+}
+
+.case-study-opis{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 480px;
+    width: 40%;
+    gap: 1rem;
+}
+
+.case-study-opis h2{
+    font-size: 2.2rem;
+    color: black;
+    font-weight: 700;
+}
+
+.case-study-opis p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.60);
+}
+
+.case-study-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 20%;
+}
+
+.case-study-btn p{
+    color: black;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.case-study-btn button{
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+@media screen and (max-width:1440px) {
+
+    .case-study{
+        padding: 1.5rem;
+    }
+
+    .case-study-opis h2{
+        font-size: 2rem;
+    }
+
+    .case-study-btn button{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .case-study-opis h2{
+        font-size: 1.3rem;
+    }
+
+    .case-study-btn button{
+        font-size: 0.6rem;
+    }
+
+}
+
+
+@media screen and (max-width:768px) {
+    .case-study{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding-top: 2.5rem;
+    }
+
+    .case-study-img,
+    .case-study-opis,
+    .case-study-btn{
+        width: 100%;
+    }
+
+    .case-study-opis{
+        max-width: unset;
+        text-align: center;
+    }
+
+    .case-study-btn{
+        align-items: center;
+    }
+
+    .case-study-btn p{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .case-study-btn button{
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    .case-study-opis h2{
+        font-size: 1rem;
+    }
+
+    .case-study-opis p{
+        font-size: 0.7rem;
+    }
+
+    .case-study-btn button{
+        font-size: 0.7rem;
+    }
+
+}

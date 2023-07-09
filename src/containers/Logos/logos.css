@@ -1,0 +1,47 @@
+.logos-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+.logo-title p{
+    font-size: 14rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.03);
+    line-height: 1;
+}
+
+.logos-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    border-top: 2px solid var(--color-white);
+    border-bottom: 2px solid var(--color-white);
+    padding: 2rem 0;
+}
+
+@media screen and (max-width:1440px) {
+    .logo-title p{
+        font-size: 12rem;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .logo-title p{
+        font-size: 9rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .logo-title p{
+        font-size: 6.5rem;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .logo-title p{
+        font-size: 4rem;
+    }
+}

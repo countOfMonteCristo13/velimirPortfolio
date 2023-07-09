@@ -1,0 +1,155 @@
+.hero-section{
+    padding: 3rem 2rem 2rem 2rem;
+
+}
+
+.hero-section-wrapper{
+    display: flex;
+    border-bottom: 2px solid var(--color-white);
+    flex-direction: row;
+}
+
+.hero-opis-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-opis{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: var(--color-white);
+}
+
+.hero-opis h3{
+    font-size: 2rem;
+    font-weight: 500;
+    flex-shrink: 1;
+}
+
+.hero-opis h2{
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+
+.hero-uiux{
+    display: flex;
+}
+
+.hero-uiux p{
+    font-size: 14rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.03);
+    line-height: 1;
+}
+
+.hero-img{
+    width: 40%;
+}
+
+.hero-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:1440px) {
+    .hero-opis h3{
+        font-size: 1.5rem;
+    }
+
+    .hero-opis h2{
+        font-size: 2rem;
+    }
+
+    .hero-uiux p{
+        font-size: 12rem;
+    }
+
+    .hero-img{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .hero-opis h3{
+        font-size: 1rem;
+    }
+
+    .hero-opis h2{
+        font-size: 1.5rem;
+    }
+
+    .hero-uiux p{
+        font-size: 9rem;
+    }
+
+}
+
+
+@media screen and (max-width:768px) {
+
+    .hero-section{
+        padding-top: 0;
+    }
+
+    .hero-section-wrapper{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .hero-opis-wrapper{
+        gap: 2rem;
+    }
+
+    .hero-opis{
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-img{
+        width: 100%;
+        max-width: 350px;
+        max-height: 450px;
+    }
+
+    .hero-opis h3{
+        font-size: 1.5rem;
+    }
+
+    .hero-opis h2{
+        font-size: 2rem;
+    }
+
+
+}
+
+@media screen and (max-width:576px) {
+    .hero-opis h3 {
+        font-size: 1.3rem;
+    }
+
+    .hero-opis h2{
+        font-size: 1.7rem;
+    }
+
+    .hero-uiux p {
+        font-size: 6.5rem;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .hero-opis h3 {
+        font-size: 1rem;
+    }
+
+    .hero-opis h2{
+        font-size: 1.5rem;
+    }
+
+    .hero-uiux p {
+        font-size: 4rem;
+    }
+}

@@ -1,0 +1,188 @@
+.footer{
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: space-between;
+}
+
+.about,
+.contact{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: var(--color-white);
+    gap: 3rem;
+}
+
+.about h2,
+.contact h2{
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.about p{
+    font-size: 1.5rem;
+    line-height: 1.6;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.60);
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    gap: 1rem;
+}
+
+.contact-info-wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 2rem;
+    align-items: center;
+}
+
+.contact-info-wrapper h3{
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.contact-info-wrapper h3:hover{
+    color: rgba(255, 255, 255, 0.60);
+}
+
+.contact-info-wrapper:first-child h3{
+    cursor: copy;
+}
+
+.contact-info-img{
+    max-width: 3rem;
+    max-height: 3rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-info-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.img-back{
+    display: none;
+    opacity: 0;
+}
+
+.contact-info-wrapper h3:hover + .contact-info-img .img-back{
+    display: block;
+    opacity: 1;
+}
+
+.contact-info-wrapper h3:hover + .contact-info-img .img-front{
+    display: none;
+    opacity: 0;
+}
+
+@media screen and (max-width:1440px) {
+
+    .about,
+    .contact{
+        gap: 2rem;
+    }
+
+    .about h2,
+    .contact h2{
+        font-size: 2rem;
+    }
+
+    .about p{
+        font-size: 1.2rem;
+    }
+
+    .contact-info-wrapper h3{
+        font-size: 1rem;
+    }
+
+    .contact-info-img{
+        max-width: 2.5rem;
+        max-height: 2.5rem;
+    }
+}
+
+
+@media screen and (max-width:1024px) {
+
+    .contact-info-img{
+        max-width: 2rem;
+        max-height: 2rem;
+    }
+
+    .contact-info-wrapper{
+        gap: 1rem;
+    }
+
+    .about h2,
+    .contact h2{
+        font-size: 1.5rem;
+    }
+
+    .about p{
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        padding: 0 2rem 2rem 2rem;
+    }
+
+    .about,
+    .contact{
+        width: 100%;
+    }
+
+    .about h2,
+    .contact h2{
+        text-align: center;
+    }
+
+    .about p{
+        text-align: justify;
+    }
+
+}
+
+
+@media screen and (max-width:425px) {
+
+    .footer{
+        gap: 2rem;
+    }
+
+    .about h2,
+    .contact h2{
+        font-size: 1rem;
+    }
+
+    .about p{
+        font-size: 0.7rem;
+    }
+
+    .contact-info-wrapper h3{
+        font-size: 0.7rem;
+    }
+
+    .contact-info-img{
+        max-width: 1.5rem;
+        max-height: 1.5rem;
+    }
+
+}

@@ -1,0 +1,56 @@
+.navbar-wrapper{
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-wrapper a{
+    font-size: 1.5rem;
+    color: var(--color-white);
+}
+
+.menu-btn{
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.menu-btn:hover,
+.navbar-wrapper a:hover{
+    color:var(--color-gray);
+}
+
+
+@media screen and (max-width:1440px) {
+    .navbar-wrapper a{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .navbar-wrapper a{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .navbar-wrapper{
+        padding: 1rem;
+    }
+
+    .menu-btn{
+        display: block;
+    }
+
+    .navbar-wrapper a{
+        display: none;
+    }
+}
+
+
+
