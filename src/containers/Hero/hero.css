@@ -31,7 +31,12 @@
 .hero-opis h2{
     font-size: 2.7rem;
     font-weight: 700;
+    transition: all 0.3s ease-in-out;
 }
+
+/* .hero-designer{
+    opacity: 0;
+} */
 
 .hero-uiux{
     display: flex;

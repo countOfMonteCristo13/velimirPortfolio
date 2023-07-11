@@ -12,8 +12,8 @@ import donQ from '../../imgs/Frame 70.png'
 import donQColor from '../../imgs/Frame 71.png'
 import donQ2 from '../../imgs/Frame 69.png'
 import donQ2Color from '../../imgs/Frame 74.png'
-import storm from '../../imgs/logo.png'
-import stormColor from '../../imgs/LogoStorm.png'
+import storm from '../../imgs/storm.png'
+import stormColor from '../../imgs/stormColor.png'
 
 const Logos = () => {
   return (

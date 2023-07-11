@@ -10,8 +10,13 @@ function App() {
   return (
     <div className="App">
       <div className='sidebar'>
-        <h3>Sta ima gospodjo</h3>
-      </div>
+        <h3 className='moving-text'> UI/UX & Web Designer </h3>
+        <h3 className='moving-text'> UI/UX & Web Designer </h3>
+        <h3 className='moving-text'> UI/UX & Web Designer </h3>
+        <h3 className='moving-text'> UI/UX & Web Designer </h3>
+        <h3 className='moving-text'> UI/UX & Web Designer </h3>
+        <h3 className='moving-text'> UI/UX & Web Designer </h3>
+        </div>
       <div className='portfolio-page'>
         <Navbar/>
         <Hero/>

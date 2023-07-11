@@ -38,9 +38,11 @@ const CaseStudies = () => {
       handleScroll();
       
       window.addEventListener('scroll', handleScroll);
+      window.addEventListener('resize', handleScroll);
 
       return () => {
         window.removeEventListener('scroll', handleScroll);
+        window.removeEventListener('resize', handleScroll);
       };
 
     })
@@ -50,8 +52,8 @@ const CaseStudies = () => {
 
   return (
     <div className='case-studies' id='work'>
-      <CaseStudy img={iPhone} title={iPhoneTitle} desc={iPhoneDesc} site={'View Case study'} design={'UI/UX'}/>
-      <CaseStudy img={kitchen} title={kitchenTitle} desc={kitchenDesc} site={'View Case study'} design={'UI/UX'}/>
+      <CaseStudy img={iPhone} title={iPhoneTitle} desc={iPhoneDesc} site={'View Case study'} design={'UI/UX'} link={'https://medium.com/@velimirjocovic/increasing-nargila-rental-business-through-a-mobile-app-45a10ecd5627'}/>
+      <CaseStudy img={kitchen} title={kitchenTitle} desc={kitchenDesc} site={'View Case study'} design={'UI/UX'} link={'https://medium.com/@velimirjocovic/empowering-home-cooks-through-a-recipe-application-4c9d226769ba'}/>
       <CaseStudy img={laptop} title={laptopTitle} desc={laptopDesc} site={'View Site'} design={'Web Design'}/>
     </div>
   )
