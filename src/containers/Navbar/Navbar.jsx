@@ -28,7 +28,7 @@ const Navbar = () => {
             <a className='navbar-link' href="#contact">Contact</a>
             {
               toggleMenu && 
-              <div className='navbar-menu slide-bottom'>
+              <div className='navbar-menu slide-bottom' onClick={() => setToggleMenu(false)}>
                 <a href="#work">Work</a>
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>

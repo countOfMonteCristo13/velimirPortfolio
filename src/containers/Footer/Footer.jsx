@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import './footer.css'
 
 import email from '../../imgs/email.png'
@@ -8,7 +8,30 @@ import mediumColor from '../../imgs/Vector-2.png'
 import linkedin from '../../imgs/Vector-1.png'
 import linkedinColor from '../../imgs/Vector-3.png'
 
+import ClipboardJS from 'clipboard';
+
+
 const Footer = () => {
+
+  
+
+  useEffect(() => {
+    const clipboard = new ClipboardJS('.email-copy');
+
+    clipboard.on('success', (e) => {
+      console.log('Text copied to clipboard:', e.text);
+    });
+
+    clipboard.on('error', (e) => {
+      console.error('Error copying text to clipboard:', e.text);
+    });
+
+    return () => {
+      clipboard.destroy();
+    };
+  }, []);
+
+  
   return (
     <div className='footer'>
       <div className='about' id='about'>
@@ -19,7 +42,7 @@ const Footer = () => {
         <h2>Contact</h2>
         <div className='contact-info'>
             <div className='contact-info-wrapper'>
-                <h3>velimirjocovic@gmail.com</h3>
+                <h3 className='email-copy' data-clipboard-text='velimirjocovic@gmail.com'>velimirjocovic@gmail.com</h3>
                 <div className='contact-info-img'>
                     <img src={email} alt="email" />
                 </div>
