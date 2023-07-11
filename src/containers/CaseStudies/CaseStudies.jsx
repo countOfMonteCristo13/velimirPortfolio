@@ -54,7 +54,7 @@ const CaseStudies = () => {
     <div className='case-studies' id='work'>
       <CaseStudy img={iPhone} title={iPhoneTitle} desc={iPhoneDesc} site={'View Case study'} design={'UI/UX'} link={'https://medium.com/@velimirjocovic/increasing-nargila-rental-business-through-a-mobile-app-45a10ecd5627'}/>
       <CaseStudy img={kitchen} title={kitchenTitle} desc={kitchenDesc} site={'View Case study'} design={'UI/UX'} link={'https://medium.com/@velimirjocovic/empowering-home-cooks-through-a-recipe-application-4c9d226769ba'}/>
-      <CaseStudy img={laptop} title={laptopTitle} desc={laptopDesc} site={'View Site'} design={'Web Design'}/>
+      <CaseStudy disabled={true} img={laptop} title={laptopTitle} desc={laptopDesc} site={'In Progress'} design={'Web Design'}/>
     </div>
   )
 }

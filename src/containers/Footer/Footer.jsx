@@ -31,18 +31,22 @@ const Footer = () => {
                 </div>
             </div>
             <div className='contact-info-wrapper'>
-                <h3><a target='_blank' rel='noreferrer noopener' href="https://medium.com/@velimirjocovic">medium.com/</a></h3>
+              <a className='contact-info-link-wrapper' target='_blank' rel='noreferrer noopener' href="https://medium.com/@velimirjocovic">
+                <h3>Velimir Jocovic</h3>
                 <div className='contact-info-img'>
-                    <img className='img-front' src={medium} alt="medium" />
-                    <img className='img-back' src={mediumColor} alt="medium" />
+                      <img className='img-front' src={medium} alt="medium" />
+                      <img className='img-back' src={mediumColor} alt="medium" />
                 </div>
+              </a>
             </div>
             <div className='contact-info-wrapper'>
-                <h3><a target='_blank' rel='noreferrer noopener' href="https://www.linkedin.com/in/velimir-jocovic-7952a7282/">linkedin.com/</a></h3>
+              <a className='contact-info-link-wrapper' target='_blank' rel='noreferrer noopener' href="https://www.linkedin.com/in/velimir-jocovic-7952a7282/">
+                <h3>Velimir Jocovic</h3>
                 <div className='contact-info-img'>
-                    <img className='img-front' src={linkedin} alt="linkedin" />
-                    <img className='img-back' src={linkedinColor} alt="linkedin" />
+                      <img className='img-front' src={linkedin} alt="linkedin" />
+                      <img className='img-back' src={linkedinColor} alt="linkedin" />
                 </div>
+              </a>
             </div>
         </div>
       </div>

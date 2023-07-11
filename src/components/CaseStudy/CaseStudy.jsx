@@ -2,7 +2,7 @@ import React from 'react'
 import './caseStudy.css'
 
 
-const CaseStudy = ({img,title,desc,site,design,link}) => {
+const CaseStudy = ({img,title,desc,site,design,link,disabled}) => {
 
 
   return (
@@ -16,7 +16,7 @@ const CaseStudy = ({img,title,desc,site,design,link}) => {
         </div>
         <div className='case-study-btn'>
              <p>{design}</p>
-             <a rel='noreferrer noopener' target='_blank' href={link}><button className='custom__button'>{site}</button></a>
+             <a rel='noreferrer noopener' target='_blank' href={link}><button disabled={disabled}  className='custom__button'>{site}</button></a>
         </div>
       
     </div>
