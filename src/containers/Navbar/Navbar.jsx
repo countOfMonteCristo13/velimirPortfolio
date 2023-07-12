@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import './navbar.css'
 
 import {BiMenuAltRight} from 'react-icons/bi'
@@ -13,16 +13,37 @@ const Navbar = () => {
     }
   }
 
+  const changeMenu = () => {
+    console.log(toggleMenu);
+    setTimeout(() =>{
+      setToggleMenu(!toggleMenu);
+    },1);
+    
+  }
+
   window.addEventListener('resize',closeWindow);
 
-  const toggleMenuButton = () => {
-    setToggleMenu(!toggleMenu);
-  }
+
+  useEffect(() => {
+    const handleClickOutside = () => {
+      if (toggleMenu) {
+        setToggleMenu(false);
+      }
+
+      console.log('sta ima gospodjo!')
+    };
+
+    document.addEventListener('click', handleClickOutside);
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [toggleMenu]);
+
 
 
   return (
     <div className='navbar-wrapper'>
-            <BiMenuAltRight className='menu-btn' onClick={() => toggleMenuButton()}/>
+            <BiMenuAltRight className='menu-btn' onClick={changeMenu}/>
             <a className='navbar-link' href="#work">Work</a>
             <a className='navbar-link' href="#about">About</a>
             <a className='navbar-link' href="#contact">Contact</a>
@@ -39,3 +60,5 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+

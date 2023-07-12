@@ -36,6 +36,7 @@
     right: 1rem;
     background-color: var(--color-gray);
     opacity: 0.4;
+    border-radius: 10px;
 }
 
 .navbar-menu a:hover{
@@ -65,9 +66,6 @@
         display: block;
     }
 
-    /* .navbar-wrapper a{
-        display: none;
-    } */
 
     .navbar-link{
         display: none;
