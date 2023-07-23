@@ -40,15 +40,18 @@
 
 @media screen and (max-width:768px) {
     .logo-img{
-        max-height: 300px;
-        max-width: 300px;
-        height: unset;
-        width: unset;
+        height: 250px;
+        width: 250px;
     }
 }
 
 
 @media screen and (max-width:425px) {
+
+    .logo-img{
+        height: 200px;
+        width: 200px;
+    }
 
     .logo-wrapper{
         gap: 1rem;

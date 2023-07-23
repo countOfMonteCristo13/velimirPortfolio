@@ -26,8 +26,8 @@ const Logos = () => {
             <Logo img={donQ2} img2={donQ2Color} desc={'Don Quixote Apartments'}/>
             <Logo img={nargila} img2={nargilaColor} desc={'Nargila Rent'}/>
             <Logo img={tasman} img2={tasmanColor} desc={'Food ordering App'}/>
-            <Logo img={storm} img2={stormColor} desc={'Storm'}/>
-            <Logo img={gamborini} img2={gamboriniColor} desc={'Gamborini restaurant'}/>
+            <Logo img={storm} img2={stormColor} desc={'Lamp Store'}/>
+            <Logo img={gamborini} img2={gamboriniColor} desc={'Italian Restaurant'}/>
         </div>
     </div>
   )
