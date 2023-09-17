@@ -42,13 +42,6 @@
     display: flex;
 }
 
-.hero-uiux p{
-    font-size: 14rem;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 0.03);
-    line-height: 1;
-}
-
 .hero-img{
     width: 40%;
 }
@@ -68,9 +61,6 @@
         font-size: 2rem;
     }
 
-    .hero-uiux p{
-        font-size: 12rem;
-    }
 
     .hero-img{
         width: 40%;
@@ -86,9 +76,6 @@
         font-size: 1.5rem;
     }
 
-    .hero-uiux p{
-        font-size: 9rem;
-    }
 
 }
 
@@ -107,6 +94,7 @@
     
     .hero-opis-wrapper{
         gap: 2rem;
+        align-items: center;
     }
 
     .hero-opis{
@@ -140,9 +128,10 @@
         font-size: 1.7rem;
     }
 
-    .hero-uiux p {
-        font-size: 6.5rem;
+    .hero-section{
+        padding-bottom: 1rem;
     }
+
 }
 
 @media screen and (max-width:425px) {
@@ -154,7 +143,4 @@
         font-size: 1.5rem;
     }
 
-    .hero-uiux p {
-        font-size: 4rem;
-    }
 }

@@ -35,7 +35,7 @@ const Hero = () => {
                 </div>
 
                 <div className='hero-uiux'>
-                    <p>UI/UX</p>
+                    <p className='big-title'>UI/UX</p>
                 </div>
             </div>
 

@@ -1,0 +1,38 @@
+.animations-section{
+    padding: 2rem 2rem 0 2rem;
+}
+.animations-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    padding-top: 2rem;
+}
+
+.animation-wrapper{
+    background-color: transparent;
+    height: 440px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.animation-wrapper img{
+    width: 100%;
+    height: 87%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.animation-wrapper p{
+    color: var(--color-white);
+}
+
+@media screen and (max-width:576px) {
+    .animations-section{
+        padding-top: 1rem;
+    }
+}
+

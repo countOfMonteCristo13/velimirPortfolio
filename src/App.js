@@ -5,6 +5,7 @@ import Hero from './containers/Hero/Hero';
 import CaseStudies from './containers/CaseStudies/CaseStudies';
 import Logos from './containers/Logos/Logos';
 import Footer from './containers/Footer/Footer';
+import Animations from './containers/Animations/Animations';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Navbar/>
         <Hero/>
         <CaseStudies/>
+        <Animations/>
         <Logos/>
         <Footer/>
       </div>

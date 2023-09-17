@@ -60,9 +60,6 @@
     align-items: center;
 }
 
-/* .contact-info-wrapper h3:hover{
-    color: rgba(255, 255, 255, 0.60);
-} */
 
 .contact-info-wrapper:first-child h3{
     cursor: copy;
@@ -168,6 +165,12 @@
         text-align: justify;
     }
 
+}
+
+@media screen and (max-width:576px) {
+    .footer{
+        padding-bottom: 1rem;
+    }
 }
 
 

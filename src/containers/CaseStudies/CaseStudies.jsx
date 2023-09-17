@@ -11,7 +11,7 @@ import CaseStudy from '../../components/CaseStudy/CaseStudy'
 const CaseStudies = () => {
 
     const laptopDesc = 'Site dedicated to all types of luxury lamps';
-    const laptopTitle = 'Finding many types of lamps with the help of the site';
+    const laptopTitle = 'Find your favorite lamps in one place';
     const iPhoneDesc = 'Try for a fast and more efficient way of ordering hookah';
     const iPhoneTitle = 'Increasing Nargila Rental Business through a Mobile App';
     const kitchenDesc = 'Try for a fast and more efficient way of finding a food recipes and learn to cook';

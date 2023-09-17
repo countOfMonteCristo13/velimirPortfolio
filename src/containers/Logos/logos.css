@@ -5,13 +5,6 @@
     padding: 2rem;
 }
 
-.logo-title p{
-    font-size: 14rem;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 0.03);
-    line-height: 1;
-}
-
 .logos-wrapper{
     display: flex;
     flex-wrap: wrap;
@@ -22,26 +15,10 @@
     padding: 2rem 0;
 }
 
-@media screen and (max-width:1440px) {
-    .logo-title p{
-        font-size: 12rem;
-    }
-}
 
-@media screen and (max-width:1024px) {
-    .logo-title p{
-        font-size: 9rem;
-    }
-}
-
-@media screen and (max-width:576px) {
-    .logo-title p{
-        font-size: 6.5rem;
-    }
-}
-
-@media screen and (max-width:425px) {
-    .logo-title p{
-        font-size: 4rem;
+@media screen and (max-width:768px) {
+    .logos-section{
+        align-items: center;
+        padding: 1rem 2rem;
     }
 }
