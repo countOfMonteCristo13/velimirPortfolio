@@ -5,7 +5,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 3rem;
+    row-gap: 2rem;
+    column-gap: 5rem;
     padding-top: 2rem;
 }
 
