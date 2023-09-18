@@ -19,7 +19,7 @@ const Logos = () => {
   return (
     <div className='logos-section'>
         <div className='logo-title'>
-            <p className='big-title'>LOGOS</p>
+            <p className='big-title'>LOGO</p>
         </div>
         <div className='logos-wrapper'>
             <Logo img={donQ} img2={donQColor} desc={'Don Quixote Apartments'}/>
